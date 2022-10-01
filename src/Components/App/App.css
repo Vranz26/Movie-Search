@@ -1,0 +1,121 @@
+body{
+  background-color: blanchedalmond;
+}
+
+header{
+  text-align: center;
+  margin: 100px auto 0;
+  display: block;
+}
+
+#genreForm, #playBtn {
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+#playBtn {
+  margin-top: 20px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border-style: none;
+  cursor:  pointer;
+}
+
+label {
+  display: block;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 200px;
+  height: auto;
+}
+
+#movieInfo {
+  width:  50%;
+  margin:  32px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoPoster{
+  width:  50%;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.infoText{
+  width: 50%;
+  line-height: 1.25
+}
+
+#title, #overview, #releaseDate {
+  padding: 10px 32px;
+}
+
+#releaseDate{
+  text-align: right;
+}
+
+#overview {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 960px) {
+  #movieInfo {
+    width:  85%;
+    margin:  32px auto;
+    display: flex;
+    flex-flow: row;
+  }
+
+  .infoPoster, .infoText{
+    width: 100%;
+  }
+
+  #title, #overview, #releaseDate {
+    padding: 10px 24px;
+  }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  header{
+    text-align: center;
+    margin: 80px auto 0;
+    display: block;
+  }
+
+  #movieInfo {
+    width:  90%;
+    margin:  32px auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoPoster, .infoText{
+    width: 100%;
+  }
+
+  img{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  #title, #overview, #releaseDate {
+    padding: 10px 20px;
+  }
+}
